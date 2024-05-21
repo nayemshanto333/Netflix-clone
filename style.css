@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: roboto;
+}
+header{
+   
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10%;
+    
+    .navbar{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 10px 0;
+
+       & img{
+        width: 150px;
+        cursor: pointer;
+       }
+       & button{
+        height: 35px;
+        width: 80px;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #e50914;
+        font-size: 18px;
+        font-size: 500;
+        cursor: pointer;
+       }
+
+    }
+    .details{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        & h2{
+            font-size: 48px;
+            padding-bottom: 15px;
+        }
+        & h3{
+            font-size: 24px;
+            padding-bottom: 15px;
+        }
+        & p{
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        .signup-form{
+
+            & input{
+                width: 450px;
+                height: 45px;
+                background-color: transparent;
+                border: .3px solid #fff;
+                color: #fff;
+                padding-left: 15px;
+                font-size: 18px;
+                border-radius: 4px;
+            }
+            & button{
+                height: 45px;
+                width: 150px;
+                background-color: #e50914;
+                border: none;
+                cursor: pointer;
+                margin-left: 5px;
+                color: #fff;
+                font-size: 18px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+}
+
+hr{
+    height: 7px;
+    background-color: #303030;
+    border: none;
+}
+
+/* Enjoy section */
+
+.enjoy-section{
+    height: 500px;
+    margin:0 10%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    & h2{
+        font-size: 48px;
+        padding-bottom: 15px;
+        width: 70%;
+    }
+    & p{
+        font-size: 24px;
+        width: 80%;
+    }
+
+    & img{
+        width: 450px;
+    }
+}
+
+ /* Watch everywhere  */
+
+.section4{
+    height: 400px;    
+    & p{
+        font-size: 24px;
+        width: 50%;
+    }
+}
+
+/*  FAQ  */
+/* 
+.faq-section{
+    height: 900px;
+    text-align: center;
+    & h2{
+        padding-top: 30px ;
+        font-size: 48px;
+    }
+    .accrodion{
+        margin: 60px auto;
+        width: 100%;
+        max-width: 750px;
+     
+       & li{
+        padding-top: 20px;
+        list-style: none;
+        padding: 5px;
+        
+        & label{
+            display: flex;
+            align-items: center;
+            background-color: #303030;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 3px;
+            position: relative;
+            cursor: pointer;
+        }
+        input[type="radio"]{
+            display: none;
+        }
+        & label::after{
+            content: "+";
+            font-size: 35px;
+            right: 20px;
+            position: absolute;
+            transition: transform .5s;
+        }
+        .content{
+            background-color: #303030;
+            text-align: left;
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .5s, padding .5s;
+
+        }
+        input[type="radio"]:checked + label + .content{
+            max-height: 600px;
+            padding: 30px 20px ;
+        }
+        input[type="radio"]:checked + label::after{
+            transform: rotate(135deg);
+        }
+       }
+    }
+
+    .details{
+       
+        
+        & p{
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        .signup-form{
+
+            & input{
+                width: 450px;
+                height: 45px;
+                background-color: transparent;
+                border: .3px solid #fff;
+                color: #fff;
+                padding-left: 15px;
+                font-size: 18px;
+                border-radius: 4px;
+            }
+            & button{
+                height: 45px;
+                width: 150px;
+                background-color: #e50914;
+                border: none;
+                cursor: pointer;
+                margin-left: 5px;
+                color: #fff;
+                font-size: 18px;
+                border-radius: 4px;
+
+            }
+        }
+    }
+} */
+.faq-section{
+    width: 100%;
+    text-align: center;
+   
+    
+    & h2{
+        font-size: 48px;
+        padding-top: 40px;
+    }
+    .accrodion{
+        margin: 60px 0;
+        width: 100%;
+        max-width: 750px;
+        margin-left: 20%;
+        & li{
+            padding: 5px;
+            list-style: none;
+
+            & label{
+                display: flex;
+                align-items: center;
+                background-color: #303030;
+                padding:20px ;
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+                position: relative;
+                margin-bottom: 3px;
+            }
+            & label::after{
+                content: "+";
+                font-size: 35px;
+                right: 20px;
+                position: absolute;
+                transition: transform .5s;            }
+            input[type="radio"]{
+                display: none;
+            }
+            .content{
+                background-color: #303030;
+                padding: 0px 20px;
+                text-align: left;
+                max-height: 0px;
+                overflow: hidden;
+                transition: max-height .5s, padding .5s;
+
+            }
+            input[type="radio"]:checked + label + .content{
+                max-height: 600px;
+                padding: 30px 20px ;
+            }
+            input[type="radio"]:checked + label::after{
+                transform: rotate(135deg);
+            }
+            
+        }
+    }
+}
+/* footer section  */
+
+
+footer{
+    height: 500px;
+    cursor: pointer;
+}
